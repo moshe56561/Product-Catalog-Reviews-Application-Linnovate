@@ -117,3 +117,9 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api
 ```
 
 > **Important:** Make sure to **add `/api`** to the API URL, like `NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api`, to ensure proper API routing.
+
+## Live Demo:
+
+You can find the deployed application in the "About" section, with the link to the live version.
+The application is hosted on Vercel, which was used for both the frontend and backend deployment.
+
