@@ -14,6 +14,7 @@ import useProduct from "@/hooks/useProduct";
 import useReviews from "@/hooks/useReviews";
 import ReviewForm from "@/components/ReviewForm";
 import ReviewList from "@/components/ReviewList"; // Import the ReviewList component
+import DemoImgage from "@/img/DEMO_PRODUCT.webp";
 
 export default function ProductDetail() {
   const params = useParams();
@@ -55,7 +56,9 @@ export default function ProductDetail() {
           >
             <CardMedia
               component="img"
-              image={product?.image || "/placeholder.jpg"}
+              // In production, we will use product.image for the image path.
+              // For now, we're using a demo image to simulate the image due to latency.
+              image={DemoImgage.src}
               alt={product?.name || "Product image"}
               sx={{
                 width: "100%",

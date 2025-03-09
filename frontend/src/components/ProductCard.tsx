@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import { Product } from "@/types";
 import Link from "next/link";
+import DemoImgage from "@/img/DEMO_PRODUCT.webp";
 
 interface ProductCardProps {
   product: Product;
@@ -28,7 +29,9 @@ export default function ProductCard({ product }: ProductCardProps) {
           <CardMedia
             component="img"
             height="140"
-            image={product.image}
+            // In production, we will use product.image for the image path.
+            // For now, we're using a demo image to simulate the image due to latency.
+            image={DemoImgage.src}
             alt={product.name}
           />
           <CardContent>
